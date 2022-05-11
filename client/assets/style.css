@@ -9,7 +9,7 @@ input,
 button {
   font-size: 14px;
   font-family: arial, sans-serif;
-  color: #bdc1c6;
+  color: white;
 }
 body {
   background-color: #202124;
@@ -33,4 +33,84 @@ body {
 .textNav {
   margin-right: 15px;
   padding: 5px;
+}
+
+.textNav > span:hover {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 1px;
+  cursor: pointer;
+}
+
+.logocontainer {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.titleLetter {
+  font-size: 70px;
+  padding: 1px;
+  font-weight: 500;
+}
+
+#googleForm {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#searchBar-container {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#searchBar {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 7px;
+  width: 75%;
+  border: solid 1px #bdc1c6;
+  border-radius: 20px;
+}
+
+#searchBar > input {
+  width: 90%;
+  background-color: transparent;
+  color: #bdc1c6;
+}
+
+#searchBar > input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#searchBar:hover {
+  background-color: #33353a;
+}
+
+#btnContainer {
+  padding: 5px;
+}
+
+#btnContainer > input {
+  width: 130px;
+  height: 30px;
+  background-color: #33353a;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+#btnContainer > input:hover {
+  cursor: pointer;
 }
