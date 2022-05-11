@@ -150,3 +150,19 @@ svg {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+#listItems {
+  margin-left: 40px;
+  position: absolute;
+  bottom: 5%;
+}
+
+#listOfSearch {
+  padding: 8px;
+}
+
+#ancor {
+  padding: 5px;
+  text-decoration: none;
+  color: #bdc1c6;
+}
