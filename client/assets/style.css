@@ -1,0 +1,168 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: white;
+}
+body {
+  background-color: #202124;
+  display: block;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexNav {
+  padding: 10px;
+  display: flex;
+  min-width: 40px;
+  margin: 0 20px;
+}
+
+.textNav {
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.textNav > span:hover {
+  text-decoration: underline solid 1px;
+  text-underline-offset: 1px;
+  cursor: pointer;
+}
+
+.logocontainer {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.titleLetter {
+  font-size: 70px;
+  padding: 1px;
+  font-weight: 500;
+}
+
+#googleForm {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#searchBar-container {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#searchBar {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 7px;
+  width: 75%;
+  border: solid 1px #bdc1c6;
+  border-radius: 20px;
+}
+
+#searchBar > input {
+  width: 90%;
+  background-color: transparent;
+  color: #bdc1c6;
+  border-style: none;
+}
+
+#searchBar > input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#searchBar:hover {
+  background-color: #33353a;
+}
+
+svg {
+  padding: 1px;
+  width: 24px;
+  height: 24px;
+}
+
+#btnContainer {
+  padding: 5px;
+}
+
+#btnContainer > input {
+  width: 130px;
+  height: 30px;
+  background-color: #33353a;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+#btnContainer > input:hover {
+  cursor: pointer;
+  background-color: #202124;
+  border: solid 1px white;
+}
+
+.newSearchBar {
+  height: 100px;
+}
+#list {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#list > li {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#searchBar-container-1 {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#googleForm--2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#listItems {
+  margin-left: 40px;
+  position: absolute;
+  bottom: 5%;
+}
+
+#listOfSearch {
+  padding: 8px;
+}
+
+#ancor {
+  padding: 5px;
+  text-decoration: none;
+  color: #bdc1c6;
+}
