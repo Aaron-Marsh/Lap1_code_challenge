@@ -11,7 +11,7 @@ server.use(cors());
 
 // Arrays of results
 
-let dogs = [
+let pasta = [
   {
     id: "1",
     name: "Spaghetti",
@@ -71,20 +71,68 @@ let dogs = [
     name: "Linguine",
     website:
       "https://www.bing.com/th?id=AMMS_5cb3fe0c2316f349518113776738d539&w=115&h=115&c=5&o=6&pid=3.1",
-  },
+  }
 ];
 
-let pasta = [
-  "Spaghetti",
-  "Cannelloni",
-  "Fusilli",
-  "Capellini",
-  "Tagliatelle",
-  "Conchiglie",
-  "Lasagne",
-  "Rigatoni",
-  "Ravioli",
-  "Linguine",
+let dogs = [
+  {
+    id: "1",
+    name: "Golden Retriever",
+    website: "https://en.wikipedia.org/wiki/Golden_Retriever"
+  },
+  {
+    id: "2",
+    name: "German Shepherd",
+    website: "https://en.wikipedia.org/wiki/German_Shepherd"
+  },
+  {
+    id: "3",
+    name: "Poodle",
+    website:
+      "https://dogtime.com/dog-breeds/poodle",
+  },
+  {
+    id: "4",
+    name: "Siberian Husky",
+    website:
+      "https://dogtime.com/dog-breeds/siberian-husky#/slide/1",
+  },
+  {
+    id: "5",
+    name: "Pug",
+    website:
+      "https://en.wikipedia.org/wiki/Pug",
+  },
+  {
+    id: "6",
+    name: "Yorkshire Terrier",
+    website:
+      "https://dogtime.com/dog-breeds/yorkshire-terrier",
+  },
+  {
+    id: "7",
+    name: "Border Collie",
+    website:
+      "https://www.akc.org/dog-breeds/border-collie/",
+  },
+  {
+    id: "8",
+    name: "Chihuahua",
+    website:
+      "https://dogtime.com/dog-breeds/chihuahua",
+  },
+  {
+    id: "9",
+    name: "Shih Tzu",
+    website:
+      "https://www.akc.org/dog-breeds/shih-tzu/",
+  },
+  {
+    id: "10",
+    name: "Bulldog",
+    website:
+      "https://en.wikipedia.org/wiki/Bulldog",
+  },
 ];
 
 // Routes for results
