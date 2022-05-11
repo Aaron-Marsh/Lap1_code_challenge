@@ -1,0 +1,36 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body,
+input,
+button {
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  color: #bdc1c6;
+}
+body {
+  background-color: #202124;
+  display: block;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexNav {
+  padding: 10px;
+  display: flex;
+  min-width: 40px;
+  margin: 0 20px;
+}
+
+.textNav {
+  margin-right: 15px;
+  padding: 5px;
+}
