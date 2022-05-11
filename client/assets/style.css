@@ -98,6 +98,13 @@ select:focus {
   background-color: #33353a;
 }
 
+svg {
+  padding: 1px;
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
 #btnContainer {
   padding: 5px;
 }
