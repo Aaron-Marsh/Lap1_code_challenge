@@ -60,6 +60,7 @@ function appendData(data) {
     list.appendChild(div);
     div.appendChild(br);
     div.appendChild(a);
+    form.style.display = "none";
   }
 }
 
