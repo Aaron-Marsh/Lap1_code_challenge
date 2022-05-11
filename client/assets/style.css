@@ -123,3 +123,30 @@ svg {
   background-color: #202124;
   border: solid 1px white;
 }
+
+.newSearchBar {
+  height: 100px;
+}
+#list {
+  list-style: none;
+  margin-left: 30px;
+}
+
+#list > li {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#searchBar-container-1 {
+  flex: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#googleForm--2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
