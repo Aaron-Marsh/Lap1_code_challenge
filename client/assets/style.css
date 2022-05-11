@@ -86,6 +86,7 @@ body {
   width: 90%;
   background-color: transparent;
   color: #bdc1c6;
+  border-style: none;
 }
 
 #searchBar > input:focus,
