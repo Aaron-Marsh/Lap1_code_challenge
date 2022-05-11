@@ -17,13 +17,20 @@ body {
 }
 
 .navbar {
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .flexNav {
+  padding: 10px;
   display: flex;
   min-width: 40px;
+  margin: 0 20px;
+}
+
+.textNav {
+  margin-right: 15px;
+  padding: 5px;
 }
