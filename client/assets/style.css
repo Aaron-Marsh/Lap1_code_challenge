@@ -57,7 +57,7 @@ body {
 
 #googleForm {
   position: absolute;
-  top: 40%;
+  top: 42%;
   transform: translateY(-50%);
   width: 100%;
   display: flex;
@@ -102,7 +102,6 @@ svg {
   padding: 1px;
   width: 24px;
   height: 24px;
-  color: white;
 }
 
 #btnContainer {
@@ -120,4 +119,6 @@ svg {
 
 #btnContainer > input:hover {
   cursor: pointer;
+  background-color: #202124;
+  border: solid 1px white;
 }
