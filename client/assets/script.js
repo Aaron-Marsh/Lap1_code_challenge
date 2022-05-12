@@ -1,26 +1,30 @@
 const form = document.querySelector("form");
-let searchresult = document.getElementById("searchresult");
+// let searchresult = document.getElementById("searchresult");
 let logocontainer = document.getElementsByClassName("logocontainer");
+
+let list = document.getElementById("listItems");
 
 const input = document.querySelector('input[type="search"]');
 const googlesearch = document.getElementById("buttonS");
 const feelinglucky = document.getElementById("buttonL");
 
 function noResult() {
-  searchresult.textContent = "Not a result. Try searching for dogs";
+  let div = document.createElement("div");
+  div.textContent = "Not a result. Try searching for 'dogs' or 'pasta'";
+  list.appendChild(div);
+  console.log('no result executed')
 }
-console.log("hello test");
+
 
 googlesearch.addEventListener("click", (e) => {
   e.preventDefault();
 
-  if (input.value === "dogs" || "pasta") {
+  if (input.value === "dogs" || input.value ==="pasta") {
     fetch(`http://localhost:3000/${input.value}`)
       .then((resp) => resp.json())
       .then((data) => {
-        // changeSite();
-        appendData(data);
-      });
+        appendData(data)
+      })
   } else {
     noResult();
   }
@@ -29,11 +33,11 @@ googlesearch.addEventListener("click", (e) => {
 feelinglucky.addEventListener("click", (e) => {
   e.preventDefault();
 
-  if (input.value === "dogs" || "pasta") {
+  if (input.value === "dogs" || input.value ==="pasta") {
     fetch(`http://localhost:3000/${input.value}/random`)
       .then((resp) => resp.json())
       .then((data) => {
-        let list = document.getElementById("listItems");
+        
         let div = document.createElement("div");
         div.setAttribute("id", "listOfSearch");
         let br = document.createElement("br");
@@ -46,7 +50,7 @@ feelinglucky.addEventListener("click", (e) => {
         div.appendChild(br);
         div.appendChild(a);
         form.style.display = "none";
-      });
+      })
   } else {
     noResult();
   }
@@ -55,11 +59,10 @@ feelinglucky.addEventListener("click", (e) => {
 function changeSite() {
   location.href = "./search.html";
 }
-function noResult() {
-  searchresult.textContent = "Not a result. Try searching for dogs";
-}
+
+
 function appendData(data) {
-  let list = document.getElementById("listItems");
+  
   for (let i = 0; i < data.length; i++) {
     let div = document.createElement("div");
     div.setAttribute("id", "listOfSearch");
