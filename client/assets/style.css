@@ -48,7 +48,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-
+.displayN {
+  display: none;
+}
 .titleLetter {
   font-size: 70px;
   padding: 1px;
@@ -88,7 +90,11 @@ body {
   color: #bdc1c6;
   border-style: none;
 }
-
+@media only screen and (min-width: 1500px) {
+  #searchBar > input {
+    width: 70%;
+  }
+}
 #searchBar > input:focus,
 textarea:focus,
 select:focus {
@@ -145,10 +151,10 @@ svg {
 }
 
 #googleForm--2 {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 #listItems {
@@ -165,4 +171,59 @@ svg {
   padding: 5px;
   text-decoration: none;
   color: #bdc1c6;
+}
+
+.searchResults-searchBar {
+  display: flex;
+  align-content: center;
+  border: solid 1px red;
+}
+
+.subLetter {
+  font-size: 32px;
+}
+
+.logocontainer-2 {
+  display: flex;
+  margin: 2rem 2rem 2rem 5rem;
+}
+
+#searchBar-2 {
+  height: 18px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 7px;
+  width: 100%;
+  border: solid 1px #bdc1c6;
+  border-radius: 20px;
+}
+
+#btnContainer-2 {
+  display: flex;
+  padding: 5px;
+}
+#btnContainer-2 > input {
+  width: 130px;
+  height: 30px;
+  background-color: #33353a;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+#btnContainer-2 > input:hover {
+  cursor: pointer;
+  background-color: #202124;
+  border: solid 1px white;
+}
+
+#searchBar-container-2 {
+  display: flex;
+  align-content: center;
+}
+
+#btnContainer-2 > input:last-child {
+  margin-left: 10px;
 }
