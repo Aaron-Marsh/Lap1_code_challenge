@@ -227,3 +227,12 @@ svg {
 #btnContainer-2 > input:last-child {
   margin-left: 10px;
 }
+#searchBar-2 > input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+#searchBar-2:hover {
+  background-color: #33353a;
+}
